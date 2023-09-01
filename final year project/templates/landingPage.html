@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+label {
+  font-family: "Raleway", sans-serif;
+  font-size: 11pt;
+}
+#forgot-pass {
+  color: #2dbd6e;
+  font-family: "Raleway", sans-serif;
+  font-size: 10pt;
+  margin-top: 3px;
+  text-align: right;
+}
+#card {
+  background: #fbfbfb;
+  border-radius: 8px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  height: 510px;
+  margin: 6rem auto 8.1rem auto;
+  width: 329px;
+}
+#card-content {
+  padding: 12px 44px;
+}
+#card-title {
+  font-family: "Rale way Thin", sans-serif;
+  letter-spacing: 4px;
+  padding-bottom: 23px;
+  padding-top: 13px;
+  text-align: center;
+}
+#signup {
+  color: #2dbd6e;
+  font-family: "Rale way", sans-serif;
+  font-size: 10pt;
+  margin-top: 16px;
+  text-align: center;
+}
+#submit-btn {
+  background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e);
+  border: none;
+  border-radius: 21px;
+  box-shadow: 0px 1px 8px #24c64f;
+  cursor: pointer;
+  color: white;
+  font-family: "Rale way SemiBold", sans-serif;
+  height: 42.3px;
+  margin: 0 auto;
+  margin-top: 50px;
+  transition: 0.25s;
+  width: 153px;
+  
+}
+#submit-btn:hover {
+  box-shadow: 0px 1px 18px #24c64f;
+}
+.form {
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+}
+.form-border {
+  background: -webkit-linear-gradient(right, #a6f77b, #2ec06f);
+  height: 1px;
+  width: 100%;
+}
+.form-content {
+  background: #fbfbfb;
+  border: none;
+  outline: none;
+  padding-top: 14px;
+}
+.underline-title {
+  background: -webkit-linear-gradient(right, #a6f77b, #2ec06f);
+  height: 2px;
+  margin: -1.1rem auto 0 auto;
+  width: 89px;
+}
+
+
+</style>
+</head>
+<body>
+
+
+  <div class="container">
+    <div id="login-register">
+      <div id="login-panel">
+        <form action="/analyse" class="login"  method="post" enctype="multipart/form-data">
+
+        <div id="card">
+          <div id="card-content">
+            <div id="card-title">
+              <h2>Hashtag 1</h2>
+              <div class="underline-title"></div>
+            </div>
+            
+              <label for="hash1" style="padding-top:13px">
+                  &nbsp;Enter Hashtag 1
+                </label>
+              <input id="hash1" class="form-content" type="text" name="hash1" autocomplete="off" required />
+              <div class="form-border"></div>
+              <label for="year1" style="padding-top:22px">&nbsp;Enter start year
+                </label>
+              <input id="year1" class="form-content" type="text" name="year1" required />
+              <div class="form-border"></div>
+                      <label for="month1" style="padding-top:22px">&nbsp;Enter start month
+                </label>
+              <input id="month1" class="form-content" type="text" name="month1" required />
+              <div class="form-border"></div>
+      
+                      <label for="date1" style="padding-top:22px">&nbsp;Enter start date
+                </label>
+              <input id="date1" class="form-content" type="text" name="date1" required />
+              <div class="form-border"></div>
+
+              <label for="year2" style="padding-top:22px">&nbsp;Enter end year
+              </label>
+            <input id="year2" class="form-content" type="text" name="year2" required />
+            <div class="form-border"></div>
+                    <label for="month2" style="padding-top:22px">&nbsp;Enter end month
+              </label>
+            <input id="month2" class="form-content" type="text" name="month2" required />
+            <div class="form-border"></div>
+    
+                    <label for="date2" style="padding-top:22px">&nbsp;Enter end date
+              </label>
+            <input id="date2" class="form-content" type="text" name="date2" required />
+            <div class="form-border"></div>
+
+              
+            
+          </div>
+        </div>
+
+
+        <div id="card">
+          <div id="card-content">
+            <div id="card-title">
+              <h2>Hashtag 2</h2>
+              <div class="underline-title"></div>
+            </div>
+            
+              <label for="hash2" style="padding-top:13px">
+                  &nbsp;Enter Hashtag 2
+                </label>
+              <input id="hash2" class="form-content" type="text" name="hash2" autocomplete="off" required />
+              <div class="form-border"></div>
+              <label for="year3" style="padding-top:22px">&nbsp;Enter start year
+                </label>
+              <input id="year3" class="form-content" type="text" name="year3" required />
+              <div class="form-border"></div>
+                      <label for="month3" style="padding-top:22px">&nbsp;Enter start month
+                </label>
+              <input id="month3" class="form-content" type="text" name="month3" required />
+              <div class="form-border"></div>
+      
+                      <label for="date1" style="padding-top:22px">&nbsp;Enter start date
+                </label>
+              <input id="date3" class="form-content" type="text" name="date3" required />
+              <div class="form-border"></div>
+
+              <label for="year4" style="padding-top:22px">&nbsp;Enter end year
+              </label>
+            <input id="year4" class="form-content" type="text" name="year4" required />
+            <div class="form-border"></div>
+                    <label for="month4" style="padding-top:22px">&nbsp;Enter end month
+              </label>
+            <input id="month4" class="form-content" type="text" name="month4" required />
+            <div class="form-border"></div>
+    
+                    <label for="date4" style="padding-top:22px">&nbsp;Enter end date
+              </label>
+            <input id="date4" class="form-content" type="text" name="date4" required />
+            <div class="form-border"></div>
+
+              
+            
+          </div>
+        </div>
+
+        <centre><input id="submit-btn" type="submit" name="submit" value="ANALYSE" /></centre>
+
+      </form>
+
+
+        
+
+
+</body>
+</html>
