@@ -22,22 +22,25 @@ names_7_days = grouped_dates[grouped_dates >= 7].index.tolist()
 df_sorted = df.sort_values(['Employee Name', 'Start'])
 df_sorted['Next_Start'] = df_sorted.groupby('Employee Name')['Start'].shift(-1)
 df_sorted['Between_Shifts'] = (df_sorted['Next_Start'] - df_sorted['End']).dt.total_seconds() / 3600
-names_shift_diff = df_sorted['Employee Name'][(df_sorted['Between_Shifts'] > 1) & (df_sorted['Between_Shifts'] < 10)].unique()
+names_shift_diff = df_sorted['Employee Name'][
+    (df_sorted['Between_Shifts'] > 1) & (df_sorted['Between_Shifts'] < 10)].unique()
 
 # c) More than 14 hours in a single shift
 names_14_hours = df['Employee Name'][df['Duration'] > 14].unique()
 
 # Check for overlapping shifts
-overlapping_shifts = df_sorted[df_sorted.duplicated(subset=['Employee Name', 'Start'], keep=False) | df_sorted.duplicated(subset=['Employee Name', 'End'], keep=False)]
+overlapping_shifts = df_sorted[
+    df_sorted.duplicated(subset=['Employee Name', 'Start'], keep=False) | df_sorted.duplicated(
+        subset=['Employee Name', 'End'], keep=False)]
 
 # Write results to output.txt
 with open('output.txt', 'w') as file:
     file.write("Employees who worked for 7 consecutive days:\n")
     file.write("\n".join(names_7_days))
-    
+
     file.write("\n\nEmployees with less than 10 hours but more than 1 hour between shifts:\n")
     file.write("\n".join(names_shift_diff.tolist()))
-    
+
     file.write("\n\nEmployees who worked more than 14 hours in a single shift:\n")
     file.write("\n".join(names_14_hours.tolist()))
 
