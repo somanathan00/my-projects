@@ -1,0 +1,23 @@
+Employees who worked for 7 consecutive days:
+
+
+Employees with less than 10 hours but more than 1 hour between shifts:
+CEreira Jr, JEse
+CaMaXaWE, CeghaW
+De Xa Cerda, IgWaciE
+DeXgadiXXE REdarMe, ChrisMiaW S
+HaCiXMEW, DeaWMe DevEW
+MraW, WiXXiaC Ha
+REdrigAez, GraWdEW AWgeX
+Xee, XaCar
+
+Employees who worked more than 14 hours in a single shift:
+DeXgadiXXE REdarMe, ChrisMiaW S
+
+Warning: Found potential overlapping shifts for the following employees:
+   Employee Name               Start                 End
+CaMaXaWE, CeghaW 2023-09-18 14:09:00                 NaT
+CaMaXaWE, CeghaW 2023-09-19 13:41:00                 NaT
+ Sparks, KeWWeMh 2023-09-20 15:30:00 2023-09-20 19:17:00
+ Sparks, KeWWeMh 2023-09-21 15:30:00 2023-09-20 19:17:00
+ Sparks, KeWWeMh 2023-09-22 15:30:00 2023-09-20 19:17:00
